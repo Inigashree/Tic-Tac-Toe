@@ -1,111 +1,73 @@
-# fullstack-tictactoe
-A full stack, client/server implementation of Tic Tac Toe in JavaScript.
+# Fullstack Tic Tac Toe Game
 
-# Preparation
+A full-stack, client-server implementation of Tic Tac Toe in JavaScript.
 
-## Install Git
+## Project Overview
 
-Download and install [git](https://git-scm.com/downloads).  Choose the latest.
+This project is a simple implementation of the classic Tic Tac Toe game using a client-server architecture. The frontend is built using React, and the backend is powered by Node.js and Express.
 
-Confirm that git is properly installed by entering `git --version` into a command line prompt.  The output should be something like:
+## Features
 
-```
-$ git --version 
-git version 2.21.0.windows.1 
-```
+- **Two-player gameplay:** Play against another person on the same network.
+- **Client-server architecture:** Separate backend (API) and frontend (Web) directories.
+- **Real-time updates:** The game updates in real-time as players make moves.
+- **Responsive design:** The frontend is designed to work across multiple devices.
+  
+## Tech Stack
 
-## Install Nodejs
+- **Frontend:** React.js
+- **Backend:** Node.js, Express
+- **Communication:** HTTP requests (REST API)
+- **Version Control:** Git, GitHub
 
-Download and install [nodejs](https://nodejs.org/en/).  Choose the LTS version.
+## Getting Started
 
-Confirm that node is installed with `node --version`:
+### Prerequisites
 
-```
-$ node --version
-v10.15.3
-```
+- **Git:** Install Git from [here](https://git-scm.com/downloads)
+- **Node.js:** Install Node.js (LTS version) from [here](https://nodejs.org/)
 
-Confirm that npm installed with `npm --version`:
+### Clone the Repository
 
-```
-$ npm --version
-6.9.0
-```
+Clone this repository to your local machine using the following command:
 
-# Getting Started
+git clone https://github.com/Inigashree/Tic-Tac-Toe-game-.git
 
-## Clone the Repo
+**Install Dependencies**
+This project has two parts: the backend (API) and the frontend (Web). You need to install the dependencies for both.
 
-First, you'll need to clone this repository to your machine.  Do this by opening a command line prompt and using `cd` to enter the directory where you'd like to save the files.
+**Backend (API)**
+Navigate to the api directory and install the dependencies:
 
-Enter `git clone https://github.com/qccoders/fullstack-tictactoe`:
-
-```
-$ git clone https://github.com/qccoders/fullstack-tictactoe 
-Cloning into 'fullstack-tictactoe'... 
-remote: Enumerating objects: 144, done.
-remote: Counting objects: 100% (144/144), done.
-remote: Compressing objects: 100% (93/93), done. eceiving objects:  22% (32/144)
-Receiving objects:  40% (58/144)   te: Total 144 (delta 71), reused 117 (delta 48), pack-reused 0
-Receiving objects: 100% (144/144), 191.47 KiB | 5.98 MiB/s, done.
-Resolving deltas: 100% (71/71), done. 
-```
-
-Use `cd fullstack-tictactoe` to enter the new directory containing the code.
-
-## Install Dependencies
-
-This repo contains two projects; the server side code which is stored in `api`, and the front end which is stored in `web`.  `cd` into both of these directories and execute `npm install` to download the dependencies for each project.
-
-```
+cd api
 $ npm install
-added 50 packages from 38 contributors and audited 124 packages in 4.112s
-found 0 vulnerabilities
-```
 
-```
+**Frontend (Web)**
+Navigate to the web directory and install the dependencies:
+
+cd web
 $ npm install
-npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):
-npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
-npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\chokidar\node_modules\fsevents):
-npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
 
-added 1815 packages from 717 contributors and audited 36235 packages in 43.028s
-found 87 vulnerabilities (63 low, 9 moderate, 15 high)
-  run `npm audit fix` to fix them, or `npm audit` for details
-```
+**Running the Project**
+## Start the Backend
+In the api directory, start the backend server by running:
 
-Don't worry about these warnings and vulnerabilities right now; that's more of a concern if you were to publish the code.
+npm start
+This will start the server at http://localhost:3001.
 
-## Start the Back End
+## Start the Frontend
+In the web directory, start the frontend:
 
-Each project needs to be started independently.  Start the back end by using `cd` to navigate to the `api` directory, then issue the command `npm start`:
+npm start
+The frontend will be available at http://localhost:3000.
 
-```
-$ npm start
+**Play the Game**
+Once both the backend and frontend are running, open the frontend in your browser and start playing Tic Tac Toe!
 
-> fullstack-tictactoe@1.0.0 start C:\Users\JP.WHATNET\source\fullstack-tictactoe\api
-> node src/index.js
+**License**
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Tic Tac Toe app listening on port 3001! 
-```
-
-## Start the Front End
-
-Open a new command prompt (leaving the previous open), then navigate to the `web` directory, then `npm start`:
-
-```
-Compiled successfully!
-
-You can now view web in the browser.
-
-  Local:            http://localhost:3000/        
-  On Your Network:  http://192.168.1.34:3000/     
-
-Note that the development build is not optimized. 
-To create a production build, use npm run build.  
-```
-
-A web browser should launch and navigate to the url above.
-
-## Play!
+**Acknowledgements**
+->Inspiration from the classic Tic Tac Toe game
+->Node.js and Express for backend development
+->React.js for frontend development
