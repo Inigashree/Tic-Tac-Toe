@@ -1,0 +1,44 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 3px solid #000;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 48pt;
+}
+
+.board {
+    border: 1px solid #000;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+.status {
+    font-size: 16pt;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inherit;
+}
+
+.reset {
+    font-size: 16pt;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inherit;
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.grey {
+    background-color: grey;
+}
